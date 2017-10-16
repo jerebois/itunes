@@ -1,3 +1,8 @@
+/**
+	Jeremie Boissevain / CMO-A / 2017 - 2018
+	New Media Design II - iTunes CSS
+**/
+
 /* Coloring */
 body {
     background-color: #28373f;
@@ -11,7 +16,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    z-index: 1;
+    /*z-index: 1;*/
     background-color: rgba(40, 55, 63, 0);
     background-blend-mode: overlay;
     background-repeat: no-repeat;    
@@ -29,7 +34,7 @@ body {
     -webkit-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);
     -moz-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);
     box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);    
-    z-index: 0;
+    /*z-index: 0;*/
 }
 
 .card-footer {
@@ -113,7 +118,6 @@ p span {
 }
 
 /* Top3 adjustments */
-
 #top3 {
     margin-bottom: 1rem;
 }
@@ -127,7 +131,6 @@ p.card-text.text-left {
 }
 
 /* Details adjustments */
-
 .card_detail {
     margin-bottom: 2rem;
 }
@@ -165,7 +168,7 @@ h2 {
     padding-bottom: 0.25rem;
 }
 
-.inner-shadow {
+/*.inner-shadow {
     -webkit-box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
     box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
@@ -177,7 +180,7 @@ h2 {
   width: 100%;
   position: relative;
   z-index: -10;
-}
+}*/
 
 .album_genre a {
     padding-left: 0;
