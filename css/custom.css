@@ -1,6 +1,211 @@
+/* Coloring */
+body {
+    background-color: #28373f;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(40, 55, 63, 0);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;    
+}
+
+#header_title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: rgba(26, 37, 43, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);
+    box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.20);    
+    z-index: 0;
+}
+
+.card-footer {
+    background-color: rgba(0,0,0,0);
+    border-top: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+#navbar_it {
+    background-color: #28373f;
+}
+
+div, span {
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #f9be03;
+    text-decoration: none;
+}
+
+p {
+    color: #868686;
+}
+
+p span {
+    color: #868686;
+}
+
+.play_icon_var {
+    width: 60px;
+}
+
+.list-group-item {
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Navbar fix and adjustments */
+#navbar_it {
+    text-align: center;
+}
+
+#navbar_it .flex-box {
+    width: 100%;
+}
+
+#navbar_it a.navbar-brand.mx-auto {
+    text-align: center;
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+
+/* Jumbotron adjustments */
+.jumbotron {
+    margin-bottom: 1rem;
+    background-color: rgba(236, 238, 239, 0.11);
+    border-radius: 0rem;
+    padding: 2rem 2rem;
+}
+
+.text-jumbo {
+    color: white;
+}
+
+/* Top3 adjustments */
+
+#top3 {
+    margin-bottom: 1rem;
+}
+
+p.card-text {
+    font-size: 20px;
+}
+
+p.card-text.text-left {
+    padding: 8px 0px 12px 50px !important;
+}
+
+/* Details adjustments */
+
+.card_detail {
+    margin-bottom: 2rem;
+}
+
+.mobile_CTA {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+}
+
+.btn-read, .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-read:hover, .read-more-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #fff;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-width: 0px 0px 2px 0px;
+    padding-bottom: 0.25rem;
+}
+
+.inner-shadow {
+    -webkit-box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -10px 30px 0px rgba(0,0,0,0.75);
+    border: 2px solid #31444e;
+    border-width: 0px 0px 2px 0px;
+}
+
+.inner-shadow img {
+  width: 100%;
+  position: relative;
+  z-index: -10;
+}
+
+.album_genre a {
+    padding-left: 0;
+}
+
+.album_genre p {
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+
+.song_list {
+    padding-top: 0rem;
+}
+
+.song_list .row {
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-width: 1px 0px 1px 0px;
+}
+
+.song_number, .song_duration {
+    color: #868686;
+}
+
 ul.buy_menu {
     list-style-type: none;
 }
+
 ul.buy_menu li {
     padding: 5px;
     font-size: 16px;
@@ -12,8 +217,12 @@ ul.buy_menu li a {
     line-height: 25px;
     display: inline-block;
     padding-left: 30px; /* To sift text off the background-image */
-    color: #3E789F;
+    color: #868686;
     background: url("../img/music_sprites.png") no-repeat; /* As all link share the same background-image */
+}
+
+ul.buy_menu li a:hover {
+    color: #f9be03;
 }
 
 ul.buy_menu li.amazon a {
@@ -41,29 +250,359 @@ p.card-text.text-left {
     padding: 12px 0px 12px 50px;
 }
 
-i.play_icon {
-    float: left;
-    font-size: 300%;
+i.play_icon_var {
+    font-size: 350%;
 }
 
-/* Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+.album_info {
+    padding-right: 0;
+}
 
+.album_info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.col.info_block {
+    padding-right: 0;
+}
+
+.card-title {
+    margin-bottom: 0.25rem;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'READ MORE';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'READ LESS';
+}
+
+.album_image, .album_aside {
+    position: relative;
+}
+
+.artist_collapse .collapse .card {
+    padding: 0.25rem 1.00rem;
+}
+
+.top3-info {
+    padding-top: 0.5rem;
+}
+
+.top3-card {
+    padding-top: 0rem;
+    padding-left: 0rem;
+}
+
+.list-group-item {
+    border-width: 1px 0px 1px 0px;
+}
+
+/* Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #f7be16;
+    border-color: #ffffff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d4a51a;
+    border-color: #b0b0b0;
+}
+
+/* SVG buttons */
+.play_icon {
+    width: 45px;
+    float: left;
+}
+
+.play-1 {
+    fill: #f7be16;
+}
+
+.play-2 {
+    fill: #fff;
+}
+
+svg#arrow_icon {
+    margin: 0rem 2rem 1rem 2rem;
+}
+
+/* Footer Adjustments */
+
+footer {
+    background-color: rgba(236, 238, 239, 0.11);
+    color:white;
+}
+
+footer .footer-copyright{
+    background-color: #28373f;
+    padding-top:3px;
+    padding-bottom:3px;
+    text-align: center;
+}
+
+footer .footer-copyright p{
+    margin: 10px 0px 10px 20px;
+    color: #ccc;
+    display: inline-block;
+    font-weight: bold;
+}
+
+footer .footer-copyright a{
+    float: right;
+    display: block;
+    margin: 10px 20px 10px 0px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+footer h5{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer a{
+    color:#d2d1d1;
+    text-decoration: none;
+}
+
+footer .columns{
+    text-align: center;
+}
+
+footer .social-networks{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+footer .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+footer .facebook:hover{
+    color:#0077e2;
+}
+
+footer .google:hover{
+    color:#ef1a1a;
+}
+
+footer .twitter:hover{
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+    footer {
+        text-align: center;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+    .mobile_CTA {
+        display: block;
+    }
+
+    .action_button {
+        margin-top: 0rem;
+    }
+
+    .buy-info_buttons {
+        margin-top: 0rem;
+    }
+
+    #navbar_it {
+        height: 3.5rem;
+    }  
+
+    ul.buy_menu li {
+        padding: 6px 0px;
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0rem;
+    }
+
+    .album_image {
+        bottom: 1.75rem;
+    }
+
+    .album_aside {
+        padding-left: 1rem;
+        bottom: 0.75rem;
+    }
+
+    .artist_info_main {
+        display: none;
+    }
+
+    .album-block {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .general_info {
+        margin-right: 0;
+        padding-right: 0;    
+    }
+
+    .album_image {
+        padding-right: 0;
+    }
+
+    .card-body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {  
+
+    .album_image {
+        bottom: 2rem;
+    }
+
+    .album_aside {
+        padding-left: 1rem;
+        bottom: 1rem;
+    }
+
+    .artist_info_main {
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) and (max-width: 991px) {
 
+    .info_row {
+        height: 10rem;
+    }
+
+    .album_image {
+        bottom: 5.50rem;
+    }
+
+    .album_aside {
+        padding-left: 1rem;
+        bottom: 4.50rem;
+    }
+
+    .artist_info_main {
+        display: none;
+    }
+
+    .top3-info {
+        padding-left: 0rem;
+    }         
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	
+@media (min-width: 992px) and (max-width: 1199px) {
+
+     .action_button {
+        margin-top: 1.25rem;
+    }
+
+    .buy-info_buttons {
+        margin-top: 0.35rem;
+    }   
+
+    .top3-info {
+        padding-left: 0;
+    }
+
+    .artist_collapse {
+        display: none;
+    }  
+
+    .star_rating {
+        padding-right: 0rem;
+    }
+
+    .album_image {
+        bottom: 2rem;
+    }
+
+    .album_aside {
+        padding-left: 1rem;
+        bottom: 1rem;
+    }
+
+    .top3-info {
+        padding-left: 0rem;
+    }
+
+    .top3-info ul li {
+        font-size: 13px;
+    }   
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .action_button {
+        margin-top: 1.25rem;
+    }
 
+    .buy-info_buttons {
+        margin-top: 0.35rem;
+    }
+
+    .artist_collapse {
+        display: none;
+    }
+
+    .info_row {
+        height: inherit;
+    } 
+ 
+    .album_aside {
+        padding-left: 1rem;
+        bottom: 3rem;
+    }
+
+    .album_image {
+        bottom: 4rem;
+    }
+
+    .top3-info {
+        padding-left: 0rem;
+    }    
 }
