@@ -40,6 +40,7 @@ body {
 .card-footer {
     background-color: rgba(0,0,0,0);
     border-top: 2px solid rgba(255, 255, 255, 0.05);
+    padding: 0.25rem 1.25rem;
 }
 
 #navbar_it {
@@ -53,6 +54,10 @@ div, span {
 h1, h2, h3, h4, h5 {
     color: white;
     font-family: 'Exo 2', sans-serif;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 a {
@@ -123,7 +128,7 @@ p span {
 }
 
 p.card-text {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.card-text.text-left {
@@ -141,7 +146,7 @@ p.card-text.text-left {
 
 h2 {
     margin-bottom: 0.5rem;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .btn-read, .read-more-trigger {
@@ -309,11 +314,13 @@ i.play_icon_var {
 
 .top3-info {
     padding-top: 0.5rem;
+    padding-left: 0rem;
 }
 
 .top3-card {
     padding-top: 0rem;
     padding-left: 0rem;
+    padding-right: 0.50rem;
 }
 
 .list-group-item {
@@ -544,7 +551,11 @@ footer .twitter:hover{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-     .action_button {
+    .top3-info 3h4 {
+        font-size: 0.90rem;
+    }
+
+    .action_button {
         margin-top: 1.25rem;
     }
 
