@@ -171,7 +171,8 @@ h2 {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-width: 0px 0px 2px 0px;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0rem;
 }
 
 /*.inner-shadow {
@@ -370,7 +371,6 @@ svg#arrow_icon {
 }
 
 /* Popover adjustments */
-
 .pointer {
     pointer-events: visible;
     cursor: pointer;
@@ -414,6 +414,10 @@ h3.popover-header {
 
 .star-rating .fa-star {
     color: #f7be16;
+}
+
+.star_box {
+    padding-right: 0rem;
 }
 
 /* Footer Adjustments */
@@ -584,6 +588,9 @@ footer .twitter:hover{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .artist_collapse_text {
+        margin-top: 0.75rem;
+    }
     .info_row {
         height: 10rem;
     }
