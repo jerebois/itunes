@@ -440,6 +440,10 @@ footer .twitter:hover{
     .mobile_CTA {
         display: block;
     }
+	
+	.play_CTA {
+		padding-left: 0rem;
+	}
 
     .action_button {
         margin-top: 0rem;
