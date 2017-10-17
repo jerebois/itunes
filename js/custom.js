@@ -7,7 +7,7 @@
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -62,6 +62,17 @@
 
   $(document).ready(function() {
       SetRatingStar();
+  });
+
+  // Pointer effect for song list
+  var $hover_box = $('.song_list .row');
+
+  $hover_box.on('mouseover', function() {
+    $(this).css('background-color', 'rgba(236, 238, 239, 0.11)');
+  });
+
+  $hover_box.on('mouseout', function() {
+    $(this).css('background-color', '');
   });
 
 })(jQuery); // End of use strict
