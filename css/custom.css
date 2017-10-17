@@ -497,6 +497,7 @@ footer .twitter:hover{
     color: #00aced;
 }
 
+
 @media screen and (max-width: 767px){
     footer {
         text-align: center;
@@ -505,6 +506,14 @@ footer .twitter:hover{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
+
+    .columns:nth-child(odd) {
+        padding-right: 0rem
+    }
+
+    .columns:nth-child(even) {
+        padding-left: 0rem
+    }
 
     .mobile_CTA {
         display: block;
