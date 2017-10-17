@@ -39,7 +39,8 @@ body {
 
 .card-footer {
     background-color: rgba(0,0,0,0);
-    border-top: 2px solid rgba(255, 255, 255, 0.05);
+    /*border-top: 2px solid rgba(255, 255, 255, 0.05);*/
+    border: none;
     padding: 0.25rem 1.25rem;
 }
 
@@ -204,11 +205,15 @@ h2 {
 .song_list .row {
     border: 2px solid rgba(255, 255, 255, 0.05);
     border-width: 1px 0px 1px 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
 
 .song_number, .song_duration {
     color: #868686;
 }
+
+/* Sprite setup */
 
 ul.buy_menu {
     list-style-type: none;
@@ -252,6 +257,12 @@ ul.buy_menu li.spotify:hover a {
     background-position: 0 -125px;
 }
 
+
+/* Fixes and adjustments */
+
+.info_row {
+    padding-top: 0.75rem;
+}
 
 p.card-text.text-left {
     /* margin: auto; */
@@ -356,6 +367,53 @@ i.play_icon_var {
 
 svg#arrow_icon {
     margin: 0rem 2rem 1rem 2rem;
+}
+
+/* Popover adjustments */
+
+.pointer {
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.pointer i:hover {
+    color: #f7be16;
+}
+
+.pointer i:focus {
+    color: #f7be16;
+}
+
+h3.popover-header {
+    color: #000;
+    font-weight: bold;
+}
+
+.popover-body {
+    text-align: center;
+    padding-top: 0rem;
+    font-size: 18px;
+}
+
+.popover-body a {
+    color: #000;
+}
+
+.popover-body a:hover {
+    color: #f7be16;
+}
+
+/* Rating stars effects */
+.star-rating {
+    font-size: 24px;
+}
+
+.star-rating span {
+    padding: 0rem .30rem;
+}
+
+.star-rating .fa-star {
+    color: #f7be16;
 }
 
 /* Footer Adjustments */
@@ -551,7 +609,7 @@ footer .twitter:hover{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    .top3-info 3h4 {
+    .top3-info h4 {
         font-size: 0.90rem;
     }
 
@@ -571,7 +629,7 @@ footer .twitter:hover{
         display: none;
     }  
 
-    .star_rating {
+    .star_box {
         padding-right: 0rem;
     }
 

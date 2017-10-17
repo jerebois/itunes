@@ -9,17 +9,22 @@
 		<title>itunes</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    
+	    <!-- Bootstrap core CSS -->
+	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 		<!-- Google material icon font -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- Font Awesome icon font for Social Media -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand" rel="stylesheet">
+
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
 	</head>
 	<body>
 		<div class="wrapper">
@@ -81,7 +86,7 @@
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#album1">
+								<a href="#album1" name="album1_buy" class="js-scroll-trigger">
 									<svg class="play_icon" data-name="play_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.44 504.44"><defs></defs><title>play_icon</title><circle class="play-1" cx="252.22" cy="252.22" r="252.22"/><polygon class="play-2" points="347.75 252.22 199.65 151.28 199.65 353.17 347.75 252.22"/></svg>
 								</a>
 								<p class="card-text text-left">Funeral Balloons</p>
@@ -108,7 +113,7 @@
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#album2">
+								<a href="#album2" name="album2_buy" class="js-scroll-trigger">
 									<svg class="play_icon" data-name="play_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.44 504.44"><defs></defs><title>play_icon</title><circle class="play-1" cx="252.22" cy="252.22" r="252.22"/><polygon class="play-2" points="347.75 252.22 199.65 151.28 199.65 353.17 347.75 252.22"/></svg>
 								</a>
 								<p class="card-text text-left">The Road, Pt. 1</p>
@@ -135,7 +140,7 @@
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="#album3">
+								<a href="#album3" name="album3_buy" class="js-scroll-trigger">
 									<svg class="play_icon" data-name="play_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.44 504.44"><defs></defs><title>play_icon</title><circle class="play-1" cx="252.22" cy="252.22" r="252.22"/><polygon class="play-2" points="347.75 252.22 199.65 151.28 199.65 353.17 347.75 252.22"/></svg>
 								</a>
 								<p class="card-text text-left">Villains</p>
@@ -178,14 +183,14 @@
 										<p class="float-left">GENRE</p>
 										<a href="#">Hip-Hop</a>
 									</div>
-									<div class="col-10 col-lg-7 star_rating">
-										<div id="stars">
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
+									<div class="col-10 col-lg-7 star_box">
+										<div class="star-rating">
+									        <span class="fa fa-star-o" data-rating="1"></span>
+									        <span class="fa fa-star-o" data-rating="2"></span>
+									        <span class="fa fa-star-o" data-rating="3"></span>
+									        <span class="fa fa-star-o" data-rating="4"></span>
+									        <span class="fa fa-star-o" data-rating="5"></span>
+        									<input type="hidden" name="rating1" class="rating-value" value="5.0">									        
 										</div>
 									</div>									
 								</div>
@@ -206,8 +211,8 @@
 								</div>
 								<div class="row">
 									<div class="text-center col buy-info_buttons">
-										<a href="#"><i class="material-icons">shopping_cart</i></a>
-										<a href="#"><i class="material-icons">info</i></a>
+										<a href="#album1_buy" class="js-scroll-trigger"><i class="material-icons">shopping_cart</i></a>
+										<a role="button" class="pointer" data-toggle="popover" data-placement="left" title="More Blockhead" data-content="<a href='http://www.blockheadmusic.com/' title='Blockhead'>www.blockheadmusic.com</a>"><i class="material-icons">info</i></a>
 									</div>							
 								</div>
 							</div>
@@ -329,16 +334,16 @@
 										<p class="float-left">GENRE</p>
 										<a href="#">Electronic</a>
 									</div>
-									<div class="col-10 col-lg-7 star_rating">
-										<div id="stars">
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
+									<div class="col-10 col-lg-7 star_box">
+										<div class="star-rating">
+									        <span class="fa fa-star-o" data-rating="1"></span>
+									        <span class="fa fa-star-o" data-rating="2"></span>
+									        <span class="fa fa-star-o" data-rating="3"></span>
+									        <span class="fa fa-star-o" data-rating="4"></span>
+									        <span class="fa fa-star-o" data-rating="5"></span>
+        									<input type="hidden" name="rating2" class="rating-value" value="4.1">									        
 										</div>
-									</div>									
+									</div>								
 								</div>
 							</div>
 							<div class="col artist_info_main">
@@ -355,8 +360,8 @@
 								</div>
 								<div class="row">
 									<div class="text-center col buy-info_buttons">
-										<a href="#"><i class="material-icons">shopping_cart</i></a>
-										<a href="#"><i class="material-icons">info</i></a>
+										<a href="#album2_buy" class="js-scroll-trigger"><i class="material-icons">shopping_cart</i></a>
+										<a role="button" class="pointer" data-toggle="popover" data-placement="left" title="More U.N.K.L.E" data-content="<a href='http://unkle.com/' title='UNKLE'>www.unkle.com</a>"><i class="material-icons">info</i></a>
 									</div>							
 								</div>
 							</div>
@@ -496,14 +501,14 @@
 										<a href="#">Stoner-Rock</a><span>,</span>
 										<a href="#">Desert-Rock</a>
 									</div>
-									<div class="col-10 col-lg-7 star_rating">
-										<div id="stars">
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
-											<span><i class="material-icons">star_border</i></span>
+									<div class="col-10 col-lg-7 star_box">
+										<div class="star-rating">
+									        <span class="fa fa-star-o" data-rating="1"></span>
+									        <span class="fa fa-star-o" data-rating="2"></span>
+									        <span class="fa fa-star-o" data-rating="3"></span>
+									        <span class="fa fa-star-o" data-rating="4"></span>
+									        <span class="fa fa-star-o" data-rating="5"></span>
+        									<input type="hidden" name="rating3" class="rating-value" value="3.1">									        
 										</div>
 									</div>									
 								</div>
@@ -524,8 +529,8 @@
 								</div>
 								<div class="row">
 									<div class="text-center col buy-info_buttons">
-										<a href="#"><i class="material-icons">shopping_cart</i></a>
-										<a href="#"><i class="material-icons">info</i></a>
+										<a href="#album3_buy" class="js-scroll-trigger"><i class="material-icons">shopping_cart</i></a>
+										<a role="button" class="pointer" data-toggle="popover" data-placement="left" title="More Queens of the Stone Age" data-content="<a href='www.qotsa.com' title='qotsa'>http://www.qotsa.com/</a>"><i class="material-icons">info</i></a>
 									</div>							
 								</div>
 							</div>
@@ -649,14 +654,20 @@
 				</div>
 				<div class="footer-copyright">
 					<p>© 2017 iTunes</p>
-					<a href="#navbar_it"><i class="material-icons">expand_less</i></a>
+					<a href="#navbar_it" class="js-scroll-trigger"><i class="material-icons">expand_less</i></a>
 				</div>
 			</footer>
 		</div>
 		
-		<!-- jQuery first, then Tether, then Bootstrap JS. -->
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/custom.js"></script>
 	</body>
 </html>
