@@ -85,7 +85,7 @@ p span {
     color: #868686;
 }
 
-.play_icon_var {
+.play_svg_var {
     width: 60px;
 }
 
@@ -278,10 +278,6 @@ p.card-text.text-left {
     padding: 12px 0px 12px 50px;
 }
 
-i.play_icon_var {
-    font-size: 350%;
-}
-
 .album_info {
     padding-right: 0;
 }
@@ -361,7 +357,7 @@ i.play_icon_var {
 }
 
 /* SVG buttons */
-.play_icon {
+.play_svg {
     width: 45px;
     float: left;
 }
@@ -378,6 +374,25 @@ i.play_icon_var {
     position: relative;
     right: 1rem;
     bottom: 2.5rem;
+}
+
+
+/* SVG buttons effects */
+
+.play_action:hover > .play_svg > .play-1 {
+    fill: #ffcb33;
+}
+
+.play_action:hover > .play_svg_var > .play-1 {
+    fill: #ffcb33;
+}
+
+.play_action:active > .play_svg > .play-1 {
+    fill: #ffcb33;
+}
+
+.play_action:active > .play_svg_var > .play-1 {
+    fill: #ffcb33;
 }
 
 svg#arrow_icon {
@@ -432,6 +447,14 @@ h3.popover-header {
 
 .star_box {
     padding-right: 0rem;
+}
+
+.star-rating .fa-star {
+    cursor: pointer;
+}
+
+.star-rating .fa-star:hover {
+    cursor: pointer;
 }
 
 /* Footer Adjustments */
