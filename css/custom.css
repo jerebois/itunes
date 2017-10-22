@@ -94,6 +94,16 @@ p span {
     background-color: rgba(255, 255, 255, 0);
 }
 
+/*MYSIC logo*/
+svg#mysic_logo {
+    height: 30px;
+    fill: #fff;
+}
+
+svg#mysic_logo:hover {
+    fill: #f9be03;
+}
+
 /* Navbar fix and adjustments */
 #navbar_it {
     text-align: center;
@@ -116,6 +126,10 @@ p span {
 .navbar-nav .nav-link {
     padding-right: 0.25rem;
     padding-left: 0.25rem;
+}
+
+.nav-link i:hover {
+    color: #ffcb33;
 }
 
 /* Jumbotron adjustments */
@@ -534,6 +548,9 @@ footer .twitter:hover{
     color: #00aced;
 }
 
+footer .footer-copyright p span {
+    font-size: 12px
+}
 
 @media screen and (max-width: 767px){
     footer {
